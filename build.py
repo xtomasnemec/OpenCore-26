@@ -4,7 +4,6 @@ import os
 print("Building...")
 
 os.makedirs("temp", exist_ok=True)
-os.makedirs("build", exist_ok=True)
 
 _RESAMPLE = getattr(Image, "Resampling", Image).LANCZOS
 
@@ -46,3 +45,12 @@ flavour("Apple")
 flavour("ExtApple")
 flavour("AppleRecv")
 flavour("ExtAppleRecv")
+
+shutil.rmtree("temp")
+
+shutil.rmtree("source/ExtAppleRecv10_4.png")
+shutil.rmtree("source/ExtAppleRecv10_5.png")
+shutil.rmtree("source/ExtAppleRecv10_6.png")
+shutil.rmtree("source/AppleRecv10_4.png")
+shutil.rmtree("source/AppleRecv10_5.png")
+shutil.rmtree("source/AppleRecv10_6.png")

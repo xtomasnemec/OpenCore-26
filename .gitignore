@@ -1,1 +1,6 @@
 .DS_Store
+./venv/
+./_pycache__/
+/build
+/temp
+/venv
